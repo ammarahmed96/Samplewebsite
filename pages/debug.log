@@ -1,0 +1,2 @@
+[0810/211825.109:ERROR:main_dll_loader_win.cc(136)] Failed to load Chrome DLL from C:\Program Files (x86)\Applemy\Application\58.0.3029.110\chrome.dll: The specified module could not be found. (0x7E)
+[0810/211942.541:ERROR:persistent_memory_allocator.cc(777)] Corruption detected in shared-memory segment.
