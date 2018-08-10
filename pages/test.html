@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function appenddata(){
+            var txt = document.getElementById("appendhere");
+            txt.innerHTML += document.getElementById("mainpage").innerHTML;
+        }
+    </script>
 </head>
 <style>
 
@@ -16,6 +22,11 @@
 
     .mar-tp2 {
         margin-top: 2%;
+    }
+    
+    .mar-bt {
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     .fix {
@@ -54,6 +65,9 @@
 <div class="container-fluid text-center bg-grey fix">
     <h2 class="whitecolor">My Website</h2>
     <h4 class="whitecolor">News Feed Load Using AJAX</h4>
+</div>
+
+<div id="mainpage" class="container-fluid text-center bg-grey">
 
     <div class="row text-center">
         <div class="col-sm-4">
@@ -100,6 +114,13 @@
             </div>
         </div>
     </div>
+
+</div>
+<div id="appendhere" class="container-fluid text-center bg-grey">
+
+</div>
+<div class="text-center mar-bt">
+    <button id="btn1" class="text-center" onclick="appenddata()">Append Testing</button>
 </div>
 </body>
 </html>
